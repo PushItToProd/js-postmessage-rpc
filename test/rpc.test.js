@@ -1,11 +1,5 @@
 import * as assert from "node:assert";
-
-// stub
-let rpcBridge = {
-  async getInt() {
-    return 42;
-  }
-}
+import { rpcBridge } from "../src/rpcStub.js";
 
 describe("RPC bridge examples", function () {
   describe("call('getInt')", function () {
