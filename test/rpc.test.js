@@ -1,5 +1,7 @@
 import * as assert from "node:assert";
-import { rpcBridge } from "../src/rpcStub.js";
+import { RpcBridge } from "../src/rpcStub.js";
+
+let rpcBridge = new RpcBridge();
 
 describe("RPC bridge examples", function () {
   describe("call('getInt')", function () {
