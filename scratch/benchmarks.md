@@ -11,6 +11,7 @@
 | Node (v22.21.0)         | 0.005 ms/op (100%)              | 0.010 ms/op (100%)                   |        200% |
 | Firefox (144.0)         | 0.008 ms/op  (160%)             | 0.096 ms/op (960%)                   |       1200% |
 | Chrome (141.0.7390.123) | 0.020 ms/op  (400%)             | 0.023 ms/op (230%)                   |        115% |
+| Average                 | 0.011 ms/op                     | 0.043 ms/op                          |        390% |
 
 * "(B) vs. (A)" compares the different implementations' results for the same environment. 
 * The parenthesized percentages in each column compares vs. the best peforming environment (lower is better; 100% is best).
