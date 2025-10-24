@@ -1,8 +1,9 @@
-// Benchmark the cost of creating a MessageChannel for each request.
-// On my M2 Pro MacBook, it averages about 0.01ms per operation.
+// Benchmark the cost of creating a MessageChannel for each request. On my Mac
+// with an M2 Pro, this averages about 0.010ms per operation in Node, 0.096ms/op
+// in Firefox, and 0.023ms/op in Chrome.
 import { RpcServer, RpcTransport } from "./rpc_MessageChannel_per_request.js";
 
-const NUM_ITERATIONS = 10_000;
+const NUM_ITERATIONS = 100_000;
 
 async function main() {
   const {port1, port2} = new MessageChannel();
