@@ -5,10 +5,10 @@ export async function main() {
   // program won't terminate early.
   let { promise, resolve } = Promise.withResolvers();
 
-  const onServerMessage = function(e) {
+  const onServerMessage = function(e: MessageEvent) {
     console.log("received message:", e);
     console.debug("data:", e.data);
-    resolve();
+    resolve(e.data);
   };
   serverPort.addEventListener('message', onServerMessage);
 
