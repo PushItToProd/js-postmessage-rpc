@@ -1,4 +1,4 @@
-import { RpcServer, RpcTransport } from "./messageChannelRoundTripper.js";
+import { RpcServer, RpcTransport } from "./rpc_MessageChannel_per_request.ts";
 
 async function main() {
   const {port1, port2} = new MessageChannel();

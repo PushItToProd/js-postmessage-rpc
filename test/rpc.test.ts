@@ -1,5 +1,5 @@
 import * as assert from "node:assert";
-import { RpcBridge } from "../src/rpcStub.js";
+import { RpcBridge } from "../src/rpcStub.ts";
 
 let rpcBridge = new RpcBridge();
 
