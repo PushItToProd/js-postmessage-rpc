@@ -1,6 +1,6 @@
 const {port1: clientPort, port2: serverPort} = new MessageChannel();
 
-async function main() {
+export async function main() {
   // This promise is used to wait for onServerMessage to be called so the
   // program won't terminate early.
   let { promise, resolve } = Promise.withResolvers();
