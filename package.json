@@ -6,6 +6,7 @@
     "mocha": "^11.7.4"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "dev": "tsc --watch"
   }
 }
